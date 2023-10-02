@@ -24,7 +24,7 @@ export default class TodoApplication extends Component {
         this.getTodoList()
     }
     getTodoList = async () => {
-        let resp = await fetch("http://localhost:5000/todo/getTodo")
+        let resp = await fetch("https://todo-app-1w5y.onrender.com/todo/getTodo")
         let result = await resp.json()
         this.setState({ TodoList: result })
         this.setState({ isEdit: true })
