@@ -1,7 +1,7 @@
 export function AddTodo(payload){
     let reqObj = {...payload,status:"Todo"}
     console.log(reqObj)
-    fetch('http://localhost:5000/todo/addTodo', {
+    fetch('https://todo-app-1w5y.onrender.com/todo/addTodo', {
             method: 'POST',
             body: JSON.stringify(reqObj),
             headers: {
@@ -16,7 +16,7 @@ export async function DeleteTodo (id){
     let header = {
         method: "DELETE"
     }
-    let resp = await fetch(`http://localhost:5000/todo/delete/${id}`, header)
+    let resp = await fetch(`https://todo-app-1w5y.onrender.com/todo/delete/${id}`, header)
     let result = await resp.json({Status:"Delete Successfullly!"})
     return result;
 }
@@ -29,7 +29,7 @@ export async function EditTodo(reqObj){
         }
     }
     let id=reqObj._id
-    fetch(`http://localhost:5000/todo/update/${id}`, headers)
+    fetch(`https://todo-app-1w5y.onrender.com/todo/update/${id}`, headers)
 }
 
 export async function TodoComplete(contact){
@@ -42,5 +42,5 @@ export async function TodoComplete(contact){
             'content-type': 'application/json'
         }
     }
-    fetch(`http://localhost:5000/todo/complete/${contact._id}`, headers)
+    fetch(`https://todo-app-1w5y.onrender.com/todo/complete/${contact._id}`, headers)
 }
