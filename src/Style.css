@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:#333333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    text-align: center;
+    padding: 10px;
+}
+label{
+    padding: 5px 0;
+}
+#inputfirst{
+    display: flex;
+    flex-direction: column;
+}
+#inputsecond{
+    display: flex;
+    flex-direction: column;
+}
+#inputthird{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: max-content;
+    padding: 15px;
+    border-radius: .5rem;
+}
+input{
+    width:90%;
+    height: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    border: none;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #fe9901;
+}
+.row{
+    display: flex;
+}
+#addtodo{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #fe9901;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:8px;
+    border-radius: .5rem;
+}
+#list-container{
+    margin-top: 10px;
+}
+h3{
+    color: #fe9901;
+    text-transform: capitalize;
+}
+#delete{
+    background-color:#fff;
+    color:red;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    border:2px solid red;
+    margin: 0px 5px;
+}
+#edit{
+    background-color:#fff;
+    color: rgb(108, 78, 230);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    border:2px solid rgb(108, 78, 230);
+    margin: 0px 5px;
+}
+#complete{
+    background-color: #fff;
+    color: rgb(1, 225, 1);
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 2px solid rgb(1, 225, 1);
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
