@@ -34,10 +34,9 @@ label{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: max-content;
+    width: 75%;
     padding: 15px;
     border-radius: .5rem;
-    width: 50%;
 }
 input{
     width:90%;
