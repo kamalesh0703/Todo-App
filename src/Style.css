@@ -37,6 +37,7 @@ label{
     width: max-content;
     padding: 15px;
     border-radius: .5rem;
+    width: 50%;
 }
 input{
     width:90%;
