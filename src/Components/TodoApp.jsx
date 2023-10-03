@@ -110,8 +110,8 @@ export default class TodoApplication extends Component {
                                     <li key={Todo._id} className="todolist">
                                         <div>
                                             <h3 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"#fe9901"}}>{Todo.name}</h3>
-                                            <h5 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":#fff"}}>{Todo.title}</h5>
-                                            <p style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"#fff"}}>{Todo.description}</p>
+                                            <h5 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":none"}}>{Todo.title}</h5>
+                                            <p style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"none"}}>{Todo.description}</p>
                                         </div>
                                         <div>
                                             <button id="complete" onClick={()=>{this.handleComplete(Todo)}} style={{display:(Todo.status==="Todo")?"":"none"}}>Complete</button>
