@@ -1,4 +1,3 @@
-import './App.css';
 import './Style.css';
 import TodoApplication from './Components/TodoApp';
 

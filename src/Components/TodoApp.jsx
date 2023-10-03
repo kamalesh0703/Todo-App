@@ -107,13 +107,13 @@ export default class TodoApplication extends Component {
                         this.state.TodoList.map((Todo, index) => {
                             return (
                                 <>
-                                    <li key={Todo._id}>
-                                        <div>
+                                    <li key={Todo._id} className="todolist">
+                                        <div className="name-container">
                                             <h3 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"#fe9901"}}>{Todo.name}</h3>
-                                            <h5 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"none"}}>{Todo.title}</h5>
-                                            <p style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"none"}}>{Todo.description}</p>
+                                            <h5 style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"#ffff"}}>{Todo.title}</h5>
+                                            <p style={{textDecoration:(Todo.status==="Complete")?"line-through":"none",color:(Todo.status==="Complete")?"gray":"#FFFf"}}>{Todo.description}</p>
                                         </div>
-                                        <div>
+                                        <div className="btn-container">
                                             <button id="complete" onClick={()=>{this.handleComplete(Todo)}} style={{display:(Todo.status==="Todo")?"":"none"}}>Complete</button>
                                             <button id="edit" onClick={() => this.handleEdit(Todo)} style={{display:(Todo.status=== "Complete")? "none":""}}>Edit</button>
                                             <button id="delete" onClick={() => this.handleDelete(Todo._id)}>Delete</button>
