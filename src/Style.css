@@ -145,6 +145,9 @@ h5,p{
     }
   }
   @media only screen and (max-width:400px) {
+   body{
+    background-color: lightblue;
+   }
    .row{
     display: flex;
     flex-direction: column;
