@@ -53,7 +53,7 @@ body{
 input{
     outline: none;
     border: gray 1px solid;
-    padding: 10px 15px;
+    padding: 8px 15px;
     margin: 5px 10px; 
     font-weight: 600;
     border-radius: .3rem;
