@@ -17,9 +17,9 @@ export default class TodoApplication extends Component {
     handleToggle = () => {
         this.setState({ isEdit: false })
     }
-    componentDidUpdate = () => {
-        this.getTodoList()
-    }
+    // componentDidUpdate = () => {
+    //     this.getTodoList()
+    // }
     componentDidMount=()=>{
         this.getTodoList()
     }
