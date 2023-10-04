@@ -53,17 +53,16 @@ body{
 input{
     outline: none;
     border: gray 1px solid;
-    padding: 8px 15px;
+    padding: 5px;
     margin: 5px 10px; 
     font-weight: 600;
     border-radius: .3rem;
     box-shadow: 0px 0px 8px 2px rgb(150, 146, 146);
 }
 label{
+    padding-left: 15px;
     color: #fff;
     font-weight: 600;
-    text-align:left;
-    margin:0px 0px 0px 15px;
 }
 .row{
     display: flex;
@@ -140,3 +139,53 @@ h5,p{
     font-weight: 400;
     font-size: 20px;
 }
+@media only screen and (max-width:800px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  @media only screen and (max-width:400px) {
+   body{
+    background-color: lightblue;
+   }
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
+   body{
+    padding:15px;
+   }
+   .container{
+    width: max-content;
+   }
+   .btn-container{
+    display: flex;
+   }
+   .list-container{
+    width: 95%;
+   }
+   input{
+    width:80%;
+    margin: 0px;
+   }
+   #inputfirst,#inputthird,#inputsecond{
+    padding: 6px 0px;
+   }   label{
+    padding-left: 5px;
+   }
+   form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   }
+   .todolist{
+    padding: 5px 10px;
+   }
+   #delete,#edit,#complete{
+    padding: 3px 5px ;
+    margin: 0px 5px;
+   }
+   .name-cantainer{
+    overflow: scroll;
+   }
+  }
