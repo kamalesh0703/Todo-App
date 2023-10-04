@@ -81,6 +81,7 @@ export default class TodoApplication extends Component {
                                 <label>Name</label>
                                 <input type="text"
                                     name="name"
+                                    placeholder="Enter the Name"
                                     value={this.state.formdata.name}
                                     onChange={this.handleChange} />
                             </div>
@@ -88,6 +89,7 @@ export default class TodoApplication extends Component {
                                 <label>Title</label>
                                 <input type="text"
                                     name="title"
+                                    placeholder="Enter the Title"
                                     value={this.state.formdata.title}
                                     onChange={this.handleChange} />
                             </div>
@@ -95,6 +97,7 @@ export default class TodoApplication extends Component {
                                 <label>Description</label>
                                 <input type="text"
                                     name="description"
+                                    placeholder="Enter the Description"
                                     value={this.state.formdata.description}
                                     onChange={this.handleChange} />
                             </div>
